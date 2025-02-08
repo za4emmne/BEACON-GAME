@@ -24,7 +24,7 @@
       var canvas = document.querySelector("#unity-canvas");
       var loadingBar = document.querySelector("#unity-loading-bar");
       var progressBarFull = document.querySelector("#unity-progress-bar-full");
-      var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+
       var warningBanner = document.querySelector("#unity-warning");
 
       // Shows a temporary message banner/ribbon for a few seconds, or
@@ -52,11 +52,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Новая папка.loader.js";
+      var loaderUrl = buildUrl + "/BEACON-GAME.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Новая папка.data",
-        frameworkUrl: buildUrl + "/Новая папка.framework.js",
-        codeUrl: buildUrl + "/Новая папка.wasm",
+        dataUrl: buildUrl + "/BEACON-GAME.data",
+        frameworkUrl: buildUrl + "/BEACON-GAME.framework.js",
+        codeUrl: buildUrl + "/BEACON-GAME.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "MoonLine Studio",
         productName: "BEACON",
@@ -113,7 +113,7 @@
                 loadingBar.style.display = "none";
                 //fullscreenButton.onclick = () => {
                 //  unityInstance.SetFullscreen(1);
-                //};
+               // };
               }).catch((message) => {
                 alert(message);
               });
